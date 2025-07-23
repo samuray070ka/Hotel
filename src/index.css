@@ -11,7 +11,6 @@
 }
 .link{
   text-decoration: none;
-  color: #000;
 }
 .home{
   width: 100%;
@@ -105,7 +104,7 @@
   color: dodgerblue;
   border: 1px solid dodgerblue;
 }
-.right form{
+.right div{
   width: 80%;
   height: 300px;
   border-radius: 20px;
@@ -115,7 +114,7 @@
   align-items: center;
   flex-direction: column;
 }
-.right form label{
+.right div label{
   text-align: center;
   color: black;
   width: 80%;
@@ -123,7 +122,7 @@
   font-weight: 600;
   margin-bottom: 20px;
 }
-.right form input{
+.right div input{
   width: 100%;
   margin-bottom: 10px;
   height: 40px;
@@ -148,22 +147,29 @@
   cursor: pointer;
   transition: .3s;
 }
+.input_btn a{
+  color: #fff;
+  transition: .3s;
+}
+.input_btn:hover a{
+  color: dodgerblue;
+}
 .input_btn:hover{
   background-color: #fff;
   color: dodgerblue;
   border: 1px solid dodgerblue;
 }
-.right form p{
+.right div p{
   font-size: 14px;
   color: #9c9c9c;
 }
-.right form p strong{
+.right div p strong{
   color: #000;
   border-bottom: 1px solid #000;
   cursor: pointer;
   transition: .2s;
 }
-.right form p strong:hover{
+.right div p strong:hover{
   color: dodgerblue;
   border-bottom: 1px solid dodgerblue;
 }
