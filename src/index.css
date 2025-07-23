@@ -88,7 +88,7 @@
   font-size: 17px;
 }
 .btn{
-  width: 120px;
+  width: 140px;
   height: 35px;
   border: none;
   outline: none;
@@ -665,6 +665,9 @@ body{
   }
   .left_footer{
     margin-bottom: 10px;
+  }
+  .video{
+    height: 60vh;
   }
 }
 @media screen and (max-width:450px) {

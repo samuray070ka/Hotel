@@ -15,59 +15,58 @@ const Home = () => {
     homeCrm: { en: "Home", ar: "الصفحة الرئيسية" },
     crm: { en: "CRM", ar: "إدارة علاقات العملاء" },
     hotel: { en: "Hotel", ar: "الفندق" },
-    title: { en: "Hotel Business Automation", ar: "أتمتة أعمال الفنادق" },
+    title: { en: "ZATCA Integration for e-Invoicing", ar: "تكامل ZATCA للفوترة الإلكترونية" },
     subtitle: {
-      en: "Congratulations, you’ve just found your new and user-friendly CRM system for hotel management!",
-      ar: "تهانينا، لقد وجدت نظام CRM جديد وسهل الاستخدام لإدارة الفنادق!"
+      en: "Congratulations! You’ve found your all-in-one e-invoicing solution for ZATCA compliance.",
+      ar: "تتهانينا! لقد وجدت نظامًا موحدًا متكاملًا للفوترة الإلكترونية متوافقًا مع ZATCA."
     },
-    tryBtn: { en: "Try it free", ar: "جرّبه مجانًا" },
-    formTitle: { en: "Get in touch with us right now", ar: "تواصل معنا الآن" },
-    demoBtn: { en: "Request a Demo", ar: "طلب عرض توضيحي" },
+    tryBtn: { en: "Try Integration", ar: "جرّب التكامل الآن" },
+    formTitle: { en: "Connect with Us Now", ar: "تواصل معنا الآن" },
+    demoBtn: { en: "Request a Demo", ar: "احجز عرضًا توضيحيًا" },
     agree: { en: "I agree to the processing of", ar: "أوافق على معالجة" },
     personal: { en: "personal data", ar: "البيانات الشخصية" },
     commonProblems: {
-      en: "Common Problems in Managing Any Hotel",
-      ar: "مشاكل شائعة في إدارة أي فندق"
-    },
+      en: "Common Challenges in Business Integration",
+      ar: "التحديات الشائعة في تكامل الأعمال"    },
     commonSubtitle: {
-      en: "What prevents your hotel from operating efficiently and attracting more guests",
-      ar: "ما الذي يمنع فندقك من العمل بكفاءة وجذب المزيد من الضيوف"
+      en: "What keeps your business from scaling efficiently?",
+      ar: "ما الذي يعيق نمو عملك بكفاءة؟"
     },
     bestChoice: {
-      en: "KPI — the best choice for hotel management",
-      ar: "KPI — الخيار الأفضل لإدارة الفنادق"
+      en: "KPI.com — Your Trusted ZATCA Integration Partner",
+      ar: "KPI.com — شريكك الموثوق لتكامل ZATCA"
     },
     guestInfo: {
-      en: "All guest information — in one window",
-      ar: "جميع معلومات الضيوف — في نافذة واحدة"
+      en: "All your invoices — in one secure platform",
+      ar: "كل فواتيرك — في منصة واحدة آمنة"
     },
     guestInfoDesc: {
       en: `The booking card shows all the necessary guest information: 
-— previous visit dates,
-— accommodation preferences,
-— history of inquiries and reviews,
-— as well as additional services they have used.`,
+        — previous visit dates,
+        — accommodation preferences,
+        — history of inquiries and reviews,
+        — as well as additional services they have used.`,
       ar: `تُظهر بطاقة الحجز جميع المعلومات الضرورية عن الضيف:
-— تواريخ الزيارات السابقة،
-— تفضيلات الإقامة،
-— سجل الاستفسارات والتقييمات،
-— بالإضافة إلى الخدمات الإضافية التي استخدمها.`
+        — تواريخ الزيارات السابقة،
+        — تفضيلات الإقامة،
+        — سجل الاستفسارات والتقييمات،
+        — بالإضافة إلى الخدمات الإضافية التي استخدمها.`
     },
     workGuide: {
-      en: "Clear work guidelines for all hotel staff",
-      ar: "إرشادات واضحة للعمل لجميع موظفي الفندق"
+      en: "Clear compliance workflow for your team",
+      ar: "مسار عمل امتثال واضح لفريقك"
     },
     workGuideDesc: {
       en: `A configured booking pipeline:
-— transition between stages with mandatory data entry,
-— task and deadline reminders,
-— monitoring the work of the front desk, managers, and support staff.`,
+        — transition between stages with mandatory data entry,
+        — task and deadline reminders,
+        — monitoring the work of the front desk, managers, and support staff.`,
       ar: `مسار حجز مُعد مسبقًا:
-— الانتقال بين المراحل مع إدخال البيانات الإلزامية،
-— تذكير بالمهام والمواعيد النهائية،
-— مراقبة عمل الاستقبال، المديرين، وموظفي الدعم.`
+        — الانتقال بين المراحل مع إدخال البيانات الإلزامية،
+        — تذكير بالمهام والمواعيد النهائية،
+        — مراقبة عمل الاستقبال، المديرين، وموظفي الدعم.`
     },
-    transform: { en: "Transform your hotel operations", ar: "حوّل عمليات فندقك" },
+    transform: { en: "Transform how your company handles invoicing", ar: "حوّل طريقة إدارة الفوترة في شركتك" },
     transformDesc: {
       en: "KPI delivers tangible improvements across all aspects of hotel management.",
       ar: "توفر KPI تحسينات ملموسة في جميع جوانب إدارة الفنادق."
@@ -102,8 +101,8 @@ const problems = [
   {
     icon: 'https://hotel.kpi.uz/imgs/firstIcon.png',
     title: {
-      en: 'Poor Customer Base Segmentation',
-      ar: 'تقسيم غير جيد لقاعدة العملاء'
+      en: 'No customer data integration',
+      ar: 'عدم وجود تكامل لبيانات العملاء'
     },
     desc: {
       en: 'There is no clear understanding of who most frequently books rooms, their preferences, or their stay history.',
@@ -113,8 +112,8 @@ const problems = [
   {
     icon: 'https://hotel.kpi.uz/imgs/secondIcon.png',
     title: {
-      en: 'Weak or Nonexistent Booking Department',
-      ar: 'قسم الحجز ضعيف أو غير موجود'
+      en: 'Manual workflows slow operations',
+      ar: 'الإجراءات اليدوية تبطئ العمليات'
     },
     desc: {
       en: 'Bookings are often handled manually by front desk staff, leading to errors, lost requests, and reduced guest trust.',
@@ -124,8 +123,8 @@ const problems = [
   {
     icon: 'https://hotel.kpi.uz/imgs/thirdIcon.png',
     title: {
-      en: 'Dishonesty Among Hotel Staff',
-      ar: 'عدم الأمانة بين موظفي الفندق'
+      en: 'No security or audit logging',
+      ar: 'غياب الأمان أو تتبع السجلات'
     },
     desc: {
       en: 'Some administrators or service staff may take part of the revenue, causing profit losses and making it impossible to accurately track daily, weekly, or monthly income.',
@@ -135,8 +134,8 @@ const problems = [
   {
     icon: 'https://hotel.kpi.uz/imgs/fourthIcon.png',
     title: {
-      en: 'Confusion When Using Multiple Communication Channels',
-      ar: 'ارتباك عند استخدام قنوات اتصال متعددة'
+      en: 'No centralized control panel',
+      ar: 'لا توجد لوحة تحكم موحدة'
     },
     desc: {
       en: 'Guests reach out via websites, messengers, calls, and social media. Without a centralized system, requests are lost or handled late.',
@@ -146,8 +145,8 @@ const problems = [
   {
     icon: 'https://hotel.kpi.uz/imgs/fifthIcon.png',
     title: {
-      en: 'Lack of Analytics',
-      ar: 'نقص في التحليلات'
+      en: 'Lack of real-time compliance monitoring',
+      ar: 'غياب تقارير الامتثال اللحظية'
     },
     desc: {
       en: 'Analysis of administrator performance, booking operations, and room occupancy is rarely done. There’s no data to evaluate efficiency or understand key business processes.',
