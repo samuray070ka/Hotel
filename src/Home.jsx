@@ -7,6 +7,7 @@ import { FiUsers } from "react-icons/fi";
 import { BsTelephone } from "react-icons/bs";
 import { useLang } from './LanguageContext.jsx';
 import LanguageDropdown from './LanguageDropdown.jsx';
+import img1 from './img1.png'
 
 const Home = () => {
   const { lang } = useLang(); 
@@ -37,34 +38,33 @@ const Home = () => {
       ar: "KPI.com — شريكك الموثوق لتكامل ZATCA"
     },
     guestInfo: {
-      en: "All your invoices — in one secure platform",
-      ar: "كل فواتيرك — في منصة واحدة آمنة"
+      en: "All Invoice Data in One Secure Dashboard Track every essential detail of your e-invoices, all in one place:",
+      ar: "كل بيانات الفواتير في لوحة تحكم واحدة وآمنة تابع جميع تفاصيل فواتيرك الإلكترونية في مكان واحد:"
     },
     guestInfoDesc: {
-      en: `The booking card shows all the necessary guest information: 
-        — previous visit dates,
-        — accommodation preferences,
-        — history of inquiries and reviews,
-        — as well as additional services they have used.`,
-      ar: `تُظهر بطاقة الحجز جميع المعلومات الضرورية عن الضيف:
-        — تواريخ الزيارات السابقة،
-        — تفضيلات الإقامة،
-        — سجل الاستفسارات والتقييمات،
-        — بالإضافة إلى الخدمات الإضافية التي استخدمها.`
+      en: `Invoice issue and delivery timestamps
+        — Customer identification and VAT details
+        — Approval statuses and rejection logs
+        — Associated credit or debit notes, linked automatically
+        — Digital signatures, UUIDs, and QR codes, fully compliant with ZATCA Phase 2`,
+      ar: `معلومات العميل والرقم الضريبي
+       — حالات الموافقة أو الرفض من ZATCA
+       — الملاحظات المدينة والدائنة المرتبطة تلقائياً
+       — التوقيعات الرقمية، وUUID، ورموز QR متوافقة بالكامل مع المرحلة الثانية من ZATCA`
     },
     workGuide: {
-      en: "Clear compliance workflow for your team",
-      ar: "مسار عمل امتثال واضح لفريقك"
+      en: "Clear Workflow for Every Finance Team A structured invoicing process with:",
+      ar: "سير عمل واضح لفريق الشؤون المالية عملية فوترية منظمة تشمل:"
     },
     workGuideDesc: {
-      en: `A configured booking pipeline:
-        — transition between stages with mandatory data entry,
-        — task and deadline reminders,
-        — monitoring the work of the front desk, managers, and support staff.`,
-      ar: `مسار حجز مُعد مسبقًا:
-        — الانتقال بين المراحل مع إدخال البيانات الإلزامية،
-        — تذكير بالمهام والمواعيد النهائية،
-        — مراقبة عمل الاستقبال، المديرين، وموظفي الدعم.`
+      en: `Seamless steps from creation to ZATCA submission
+       — Mandatory fields validation before sending
+       — Automatic deadline reminders
+       — Full activity log of staff handling invoices and corrections`,
+      ar: `خطوات متسلسلة من الإنشاء حتى الإرسال إلى ZATCA
+       — التحقق من الحقول المطلوبة قبل الإرسال
+       — تذكيرات تلقائية بالمواعيد النهائية
+       — سجل نشاط كامل للموظفين المسؤولين عن الفواتير والتعديلات`
     },
     transform: { en: "Transform how your company handles invoicing", ar: "حوّل طريقة إدارة الفوترة في شركتك" },
     transformDesc: {
@@ -72,28 +72,28 @@ const Home = () => {
       ar: "توفر KPI تحسينات ملموسة في جميع جوانب إدارة الفنادق."
     },
     faq: { en: "Frequently Asked Questions", ar: "الأسئلة الشائعة" },
-    offer: { en: "Limited Time Offer", ar: "عرض لفترة محدودة" },
-    streamline: { en: "Time to streamline your hotel management?", ar: "هل حان الوقت لتنظيم إدارة فندقك؟" },
+    offer: { en: " Limited Time Offer", ar: " عرض لفترة محدودة" },
+    streamline: { en: "Is your business ready for ZATCA Phase 2 compliance?", ar: "هل عملك جاهز للامتثال للمرحلة الثانية من ZATCA؟" },
     join: {
-      en: "Join hundreds of hotels already saving time and delighting guests with kpi.com",
-      ar: "انضم إلى مئات الفنادق التي توفر الوقت وتسعد الضيوف مع kpi.com"
+      en: "Join companies across Saudi Arabia who are already saving time and staying compliant with KPI.com.",
+      ar: "انضم إلى الشركات التي بدأت التوفير وضمان الامتثال مع KPI.com"
     },
     register: {
-      en: "Register today and get 50% off for 3 months!",
-      ar: "سجّل اليوم واحصل على خصم 50% لمدة 3 أشهر!"
+      en: "Sign up today and get 3 months free with 50% off onboarding!",
+      ar: "سجل الآن واحصل على 3 أشهر مجانًا مع خصم 50٪ على التهيئة!"
     },
-    tryNow: { en: "Try for Free", ar: "جرّب مجانًا" },
-    schedule: { en: "Schedule a Demo", ar: "جدولة عرض توضيحي" },
-    orCall: { en: "Or call us at:", ar: "أو اتصل بنا على:" },
+    tryNow: { en: "Try for Free", ar: "احجز عرضًا توضيحيًا" },
+    schedule: { en: "Book a Demo", ar: "جرّب الآن مجانًا" },
+    orCall: { en: "Or call us at:", ar: "أو اتصل بنا:" },
     cards: {
-      time: { en: "Time saving", ar: "توفير الوقت" },
-      time_desc: { en: "Faster check-in and optimized operational processes", ar: "تسجيل وصول أسرع وعمليات محسّنة" },
-      revenue: { en: "Revenue Growth", ar: "زيادة الإيرادات" },
-      revenue_desc: { en: "Average increase in additional income (SPA, restaurants, services, etc.)", ar: "زيادة متوسطة في الإيرادات الإضافية (السبا، المطاعم، الخدمات، إلخ)" },
-      staff: { en: "Staff Efficiency", ar: "كفاءة الموظفين" },
-      staff_desc: { en: "Reduced administrative burden and manual tasks", ar: "تقليل العبء الإداري والمهام اليدوية" },
-      satisfaction: { en: "Guest Satisfaction", ar: "رضا النزلاء" },
-      satisfaction_desc: { en: "Improved service ratings and guest loyalty", ar: "تحسين تقييمات الخدمة وولاء النزلاء" }
+      time: { en: "Save Time", ar: "توفير الوقت" },
+      time_desc: { en: "Automate invoice generation and submission to ZATCA with zero manual work.", ar: "أتمتة إنشاء الفواتير وإرسالها إلى ZATCA بدون تدخل يدوي." },
+      revenue: { en: "Increase Revenue", ar: "زيادة الإيرادات" },
+      revenue_desc: { en: "Stay fully compliant and avoid regulatory fines or rejection of invoices.", ar: "التوافق الكامل مع اللوائح لتجنب رفض الفواتير أو الغرامات." },
+      staff: { en: "Boost Team Efficiency", ar: "رفع كفاءة الفريق" },
+      staff_desc: { en: "Integrated workflows eliminate repetitive tasks and reduce human error.", ar: "التكامل يُلغي المهام المكررة ويقلل الأخطاء البشرية." },
+      satisfaction: { en: "Customer Satisfaction", ar: "رضا العملاء" },
+      satisfaction_desc: { en: "Faster approvals, standardized formats, and trusted compliance build confidence.", ar: "موافقات أسرع، تنسيقات موحدة، وامتثال موثوق يعزز الثقة." }
     }
   };
 
@@ -105,8 +105,8 @@ const problems = [
       ar: 'عدم وجود تكامل لبيانات العملاء'
     },
     desc: {
-      en: 'There is no clear understanding of who most frequently books rooms, their preferences, or their stay history.',
-      ar: 'لا يوجد فهم واضح لمن يقوم بحجز الغرف بشكل متكرر، أو تفضيلاتهم أو تاريخ إقامتهم.'
+      en: 'You don’t have a clear view of who your customers are, what they prefer, or how they interact with your services. Without proper integration, personalized service and invoice accuracy suffer.',
+      ar: 'لا توجد رؤية واضحة حول من هم عملاؤك، وما هي تفضيلاتهم، أو كيف يتفاعلون مع خدمتك. بدون تكامل جيد، تتأثر دقة الفوترة وجودة الخدمة الشخصية.'
     }
   },
   {
@@ -116,41 +116,41 @@ const problems = [
       ar: 'الإجراءات اليدوية تبطئ العمليات'
     },
     desc: {
-      en: 'Bookings are often handled manually by front desk staff, leading to errors, lost requests, and reduced guest trust.',
-      ar: 'غالبًا ما تتم معالجة الحجوزات يدويًا من قبل موظفي الاستقبال، مما يؤدي إلى أخطاء، وفقدان الطلبات، وتقليل ثقة النزلاء.'
+      en: 'Calls, emails, and chats are scattered across tools. Without integration, invoice and order records are lost or delayed.',
+      ar: 'المكالمات والرسائل والمحادثات موزعة على أدوات متعددة. بدون تكامل، تضيع سجلات الفواتير أو تتأخر.'
     }
   },
   {
     icon: 'https://hotel.kpi.uz/imgs/thirdIcon.png',
     title: {
-      en: 'No security or audit logging',
-      ar: 'غياب الأمان أو تتبع السجلات'
+      en: 'No traceability or controls',
+      ar: 'غياب التتبع أو الرقابة'
     },
     desc: {
-      en: 'Some administrators or service staff may take part of the revenue, causing profit losses and making it impossible to accurately track daily, weekly, or monthly income.',
-      ar: 'قد يأخذ بعض الموظفين أو الإداريين جزءًا من الإيرادات، مما يتسبب في خسائر وربما يستحيل تتبع الدخل بدقة.'
+      en: 'Team members can bypass systems and issue invoices off-record. Without digital traceability, compliance and trust are compromised.',
+      ar: 'يمكن للموظفين تجاوز النظام وإصدار فواتير خارج السجلات. غياب التتبع الرقمييعرض الثقة والامتثال للخطر.'
     }
   },
   {
     icon: 'https://hotel.kpi.uz/imgs/fourthIcon.png',
     title: {
-      en: 'No centralized control panel',
-      ar: 'لا توجد لوحة تحكم موحدة'
+      en: 'No unified invoicing channel',
+      ar: 'عدم وجود قناة فواتير موحدة'
     },
     desc: {
-      en: 'Guests reach out via websites, messengers, calls, and social media. Without a centralized system, requests are lost or handled late.',
-      ar: 'يتواصل الضيوف عبر المواقع الإلكترونية، والرسائل، والمكالمات، ووسائل التواصل الاجتماعي. بدون نظام مركزي، يتم فقدان الطلبات أو التعامل معها بشكل متأخر.'
+      en: 'Multiple communication platforms with no sync result in lost or duplicated invoices. Integration brings all workflows into one dashboard.',
+      ar: 'تعدد القنوات دون مزامنة يؤدي إلى ضياع الفواتير أو تكرارها. يتيح التكامل مركزيةالعمليات في لوحة واحدة.'
     }
   },
   {
     icon: 'https://hotel.kpi.uz/imgs/fifthIcon.png',
     title: {
-      en: 'Lack of real-time compliance monitoring',
-      ar: 'غياب تقارير الامتثال اللحظية'
+      en: 'No real-time insights or compliance data',
+      ar: 'غياب التحليلات أو بيانات الامتثال اللحظية'
     },
     desc: {
-      en: 'Analysis of administrator performance, booking operations, and room occupancy is rarely done. There’s no data to evaluate efficiency or understand key business processes.',
-      ar: 'نادراً ما يتم تحليل أداء الإداريين وعمليات الحجز ونسبة إشغال الغرف. لا توجد بيانات لتقييم الكفاءة أو لفهم العمليات الأساسية.'
+      en: 'You can’t monitor performance, revenue, or audit status. With KPI.com, all ZATCA-compliant data is tracked instantly.',
+      ar: 'لا يمكن تتبع الأداء أو الإيرادات أو حالة التدقيق. باستخدام KPI.com، تتم متابعة كل بيانات ZATCA فورياً.'
     }
   }
 ];
@@ -158,44 +158,34 @@ const problems = [
 const faqData = [
   {
     question: {
-      en: 'How long does it take to fully implement the system?',
-      ar: 'كم من الوقت يستغرق تنفيذ النظام بالكامل؟'
+      en: 'What is Fatoora?',
+      ar: 'ما هي فاتورة؟'
     },
     answer: {
-      en: 'Typically 2–4 weeks depending on your hotel.',
-      ar: 'عادةً ما يستغرق من 2 إلى 4 أسابيع حسب الفندق.'
+      en: 'Fatoora is Saudi Arabia’s national e-invoicing platform introduced by ZATCA (Zakat, Tax and Customs Authority). All businesses are required to generate and send e-invoices digitally through this system. With Phase 2 now active, invoices must be submitted in real time to the Fatoora platform via approved electronic systems like KPI.com.',
+      ar: 'فاتورة" هي منصة الفوترة الإلكترونية الوطنية في المملكة العربية السعودية والتي أطلقتها هيئة الزكاة والضريبة والجمارك (ZATCA). يجب على جميع الشركات إصدار الفواتير إلكترونيًا وإرسالها من خلال هذه المنصة. في المرحلة الثانية، أصبح من الإلزامي إرسال الفواتير مباشرة إلى نظام "فاتورة" باستخدام أنظمة إلكترونية معتمدة مثل KPI.com.'
     }
   },
   {
     question: {
-      en: 'What is the payment structure? Monthly or yearly?',
-      ar: 'ما هي خطة الدفع؟ شهرية أم سنوية؟'
+      en: 'What’s the difference between a tax invoice and a simplified tax invoice?',
+      ar: '?ما الفرق بين الفاتورة الضريبية والفاتورة الضريبية المبسطة'
     },
     answer: {
-      en: 'We offer both monthly and yearly plans depending on your preference.',
-      ar: 'نقدم خططًا شهرية وسنوية حسب تفضيلاتكم.'
+      en: " A tax invoice is typically issued for business-to-business (B2B) transactions and includes details like the buyer's VAT number. A simplified tax invoice is used for business-to-consumer (B2C) transactions and contains less detailed information.",
+      ar: 'عادةً ما يتم إصدار الفاتورة الضريبية للمعاملات بين الشركات (B2B) وتحتوي على تفاصيل مثل الرقم الضريبي للمشتري. أما الفاتورة الضريبية المبسطة فتُستخدم في المعاملات مع الأفراد (B2C) وتحتوي على معلومات أقل تفصيلاً.'
     }
   },
   {
     question: {
-      en: 'Will the hotel staff need additional training to use the system?',
-      ar: 'هل سيحتاج موظفو الفندق إلى تدريب إضافي لاستخدام النظام؟'
+      en: 'Should every invoice have a QR code?',
+      ar: 'هل يجب أن تحتوي كل فاتورة على رمز QR؟'
     },
     answer: {
-      en: 'Minimal training is required, and we provide full support.',
-      ar: 'يُطلب تدريب بسيط فقط، ونحن نقدم دعمًا كاملاً.'
+      en: ' Yes, according to ZATCA regulations, all e-invoices must include a QR code. KPI.com automatically generates the required QR codes for both standard and simplified invoices to ensure compliance.',
+      ar: ' نعم، وفقًا للوائح هيئة الزكاة (ZATCA)، يجب أن تتضمن جميع الفواتير الإلكترونية رمز QR. يقوم نظام KPI.com بإنشاء رموز QR المطلوبة تلقائيًا لكل من الفواتير القياسية والمبسطة لضمان التوافق الكامل.'
     }
   },
-  {
-    question: {
-      en: 'Does the system save guest preferences and history?',
-      ar: 'هل يحفظ النظام تفضيلات الضيوف وتاريخهم؟'
-    },
-    answer: {
-      en: 'Yes, guest data is saved securely for personalized service.',
-      ar: 'نعم، يتم حفظ بيانات الضيوف بشكل آمن لتقديم خدمة مخصصة.'
-    }
-  }
 ];
 
 
@@ -260,7 +250,7 @@ const faqData = [
           <p>{t.guestInfoDesc[lang]}</p>
         </div>
         <div className='box_right sd'>
-          <img src="https://hotel.kpi.uz/imgs/amoCrmFirst.png" alt="" />
+          <img src={img1} alt="" />
         </div>
       </div>
 
@@ -329,7 +319,7 @@ const faqData = [
           <button className='left_footer'>{t.tryNow[lang]} <IoIosArrowForward /></button>
           <button className='right_footer'>{t.schedule[lang]} <IoIosArrowForward /></button>
         </div>
-        <h6><BsTelephone className='phone' /> {t.orCall[lang]} <strong>+998 000 00 00</strong></h6>
+        <h6><BsTelephone className='phone' /> {t.orCall[lang]} <strong>+996 XXX XX XX</strong></h6>
       </div>
     </>
   );

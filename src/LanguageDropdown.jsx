@@ -27,7 +27,7 @@ const LanguageDropdown = () => {
   };
 
   return (
-    <div className="language-dropdown " onClick={() => setOpen(!open)}>
+    <div className="language-dropdown" onClick={() => setOpen(!open)}>
       <button className="lang-button">
         <img src={currentLang.flag} alt={currentLang.label} className="flag" />
         <span>{currentLang.code.toUpperCase()}</span>
