@@ -8,6 +8,7 @@ import { BsTelephone } from "react-icons/bs";
 import { useLang } from './LanguageContext.jsx';
 import LanguageDropdown from './LanguageDropdown.jsx';
 import img1 from './img1.png'
+import img2 from './image.png'
 
 const Home = () => {
   const { lang } = useLang(); 
@@ -250,9 +251,9 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='img_box'>
+      <div className='img_box dff'>
         <div className='box_right df'>
-          <img src="https://hotel.kpi.uz/imgs/amoCrmSecond.png" alt="" />
+          <img src={img2} alt="" />
         </div>
         <div className='box_left'>
           <h3>{t.workGuide[lang]}</h3>
