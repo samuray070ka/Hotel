@@ -76,10 +76,6 @@ const Home = () => {
         en: "Join companies across Saudi Arabia who are already saving time and staying compliant with KPI.com.",
         ar: "انضم إلى الشركات التي بدأت التوفير وضمان الامتثال مع KPI.com"
         },
-        register: {
-        en: "Sign up today and get 3 months free with 50% off onboarding!",
-        ar: "سجل الآن واحصل على 3 أشهر مجانًا مع خصم 50٪ على التهيئة!"
-        },
         tryNow: { en: "Try for Free", ar: "احجز عرضًا توضيحيًا" },
         schedule: { en: "Book a Demo", ar: "جرّب الآن مجانًا" },
         orCall: { en: "Or call us at:", ar: "أو اتصل بنا:" },
@@ -198,7 +194,9 @@ const Home = () => {
               {/* <button className='button'>{t.homeCrm[lang]} <IoIosArrowForward className='left_icon'/> {t.crm[lang]} <IoIosArrowForward className='left_icon'/> {t.hotel[lang]}</button> */}
               <h1>{t.title[lang]}</h1>
               <p>{t.subtitle[lang]}</p>
-              <button className='btn'>{t.tryBtn[lang]} <IoIosArrowForward className='left_icon'/></button>
+              <a href="https://calendly.com/kpicom/kpi-com-demo">
+                <button className='btn'>{t.tryBtn[lang]} <IoIosArrowForward className='left_icon'/></button>
+              </a>
             </div>
             <div className='right'>
                 <div>
@@ -300,10 +298,14 @@ const Home = () => {
       <div className="footer">
         <button className='footer_btn'>{t.offer[lang]}</button>
         <h1>{t.streamline[lang]}</h1>
-        <p>{t.join[lang]}<br className='mb' /><strong>{t.register[lang]}</strong></p>
+        <p>{t.join[lang]}<br className='mb' /></p>
         <div className='button_box'>
-          <button className='left_footer'>{t.tryNow[lang]} <IoIosArrowForward className='icon icon_btn'/></button>
-          <button className='right_footer'>{t.schedule[lang]} <IoIosArrowForward className='icon icon_btn'/></button>
+          <a href="https://calendly.com/kpicom/kpi-com-demo" className='left_footer_box'>
+            <button className='boc'>{t.tryNow[lang]} <IoIosArrowForward className='icon icon_btn'/></button>
+          </a>
+          <a href="https://calendly.com/kpicom/kpi-com-demo" className='right_footer_box'>
+            <button className='boc two'>{t.schedule[lang]} <IoIosArrowForward className='icon icon_btn'/></button>
+          </a>
         </div>
         <h6><BsTelephone className='phone' /> {t.orCall[lang]} <strong>+996 XXX XX XX</strong></h6>
       </div>
