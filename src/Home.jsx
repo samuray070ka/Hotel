@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 import './index.css';
-import { IoIosArrowForward, IoIosStarOutline } from "react-icons/io";
-import { MdOutlineAccessTime } from "react-icons/md";
-import { BiDollarCircle } from "react-icons/bi";
-import { FiUsers } from "react-icons/fi";
+import { IoIosArrowForward } from "react-icons/io";
 import { BsTelephone } from "react-icons/bs";
 import { useLang } from './LanguageContext.jsx';
 import LanguageDropdown from './LanguageDropdown.jsx';
 import img1 from './img1.png'
-import img2 from './image.png'
+import img3 from './For-MuhammadSodiq-teacher (2).png'
+
 
 const Home = () => {
   const { lang } = useLang(); 
@@ -86,14 +84,16 @@ const Home = () => {
         schedule: { en: "Book a Demo", ar: "جرّب الآن مجانًا" },
         orCall: { en: "Or call us at:", ar: "أو اتصل بنا:" },
         cards: {
-        time: { en: "Save Time", ar: "توفير الوقت" },
-        time_desc: { en: "Automate invoice generation and submission to ZATCA with zero manual work.", ar: "أتمتة إنشاء الفواتير وإرسالها إلى ZATCA بدون تدخل يدوي." },
-        revenue: { en: "Increase Revenue", ar: "زيادة الإيرادات" },
-        revenue_desc: { en: "Stay fully compliant and avoid regulatory fines or rejection of invoices.", ar: "التوافق الكامل مع اللوائح لتجنب رفض الفواتير أو الغرامات." },
-        staff: { en: "Boost Team Efficiency", ar: "رفع كفاءة الفريق" },
-        staff_desc: { en: "Integrated workflows eliminate repetitive tasks and reduce human error.", ar: "التكامل يُلغي المهام المكررة ويقلل الأخطاء البشرية." },
-        satisfaction: { en: "Customer Satisfaction", ar: "رضا العملاء" },
-        satisfaction_desc: { en: "Faster approvals, standardized formats, and trusted compliance build confidence.", ar: "موافقات أسرع، تنسيقات موحدة، وامتثال موثوق يعزز الثقة." }
+        time: { en: "☁️ Cloud-Based Platform", ar: "☁️ منصة قائمة على السحابة" },
+        time_desc: { en: "KPI.com operates entirely in the cloud, so you can manage and issue invoices from anywhere with internet access. It enables seamless communication with ZATCA’s official system without the need for local installations.", ar: "يعمل نظام KPI.com بالكامل من خلال السحابة، مما يتيح لك إصدار وإدارة الفواتير من أي مكان يتوفر فيه اتصال بالإنترنت. كما يدعم النظام التكامل المباشر مع منصة هيئة الزكاة (ZATCA) دون الحاجة إلى تثبيتات محلية." },
+        revenue: { en: "🔗 Integrated with ZATCA API", ar: "🔗 تكامل مباشر مع واجهة ZATCA البرمجية (API)" },
+        revenue_desc: { en: "The platform is directly connected to the ZATCA e-Invoicing Integration Portal through certified API access, ensuring that invoices are submitted securely and in real-time.", ar: "يرتبط النظام مباشرة ببوابة التكامل الإلكتروني الخاصة بـ ZATCA عبر واجهة API معتمدة، مما يضمن إرسال الفواتير بشكل آمن وفي الوقت الفعلي." },
+        staff: { en: "🔒 Tamper-Proof Infrastructure", ar: "🔒 بنية محمية ضد التلاعب" },
+        staff_desc: { en: "KPI.com includes built-in protection against invoice manipulation. The system prevents unauthorized changes and ensures that invoice data remains intact and legally compliant.", ar: "يوفر KPI.com آلية حماية مدمجة تمنع أي تعديل غير مصرح به على الفواتير. يضمن النظام أن تبقى بيانات الفاتورة سليمة ومتوافقة قانونياً." },
+        satisfaction: { en: "🗂 Full Invoice Archiving", ar: "🗂 أرشفة كاملة لجميع الفواتير" },
+        satisfaction_desc: { en: "Every invoice issued through KPI.com is automatically stored and indexed. This ensures that all records are retained for auditing, reporting, and ZATCA compliance purposes.", ar: "يتم حفظ كل فاتورة يتم إصدارها من خلال KPI.com بشكل تلقائي ومنظم، مما يضمن إمكانية الرجوع إليها لأغراض التدقيق والتقارير ومتطلبات الامتثال مع ZATCA." },
+        add: {en: "🛡 Advanced Security Controls", ar: "🛡 ضوابط أمان متقدمة"},
+        add_desc: {en: "Our system is built to detect and log any manual alterations, suspicious behavior, or tampering attempts. It guarantees that no sensitive information is leaked or lost during invoice creation and transmission.", ar:"يتميز النظام بالقدرة على اكتشاف وتسجيل أي تعديل يدوي أو سلوك مشبوه أو محاولة تلاعب. كما يضمن عدم تسريب أو فقدان أي بيانات أثناء إنشاء الفاتورة أو إرسالها."}
         }
   };
   const problems = [
@@ -251,43 +251,32 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='img_box dff'>
-        <div className='box_right df'>
-          <img src={img2} alt="" />
-        </div>
-        <div className='box_left'>
-          <h3>{t.workGuide[lang]}</h3>
-          <p>{t.workGuideDesc[lang]}</p>
-        </div>
-      </div>
+      <img className='img' src={img3} alt="" />
+
 
       <h1 className='text'>{t.transform[lang]}</h1>
       <p className='text_p'>{t.transformDesc[lang]}</p>
 
       <div className="cards">
         <div className="card">
-          <button><MdOutlineAccessTime /></button>
           <h2>{t.cards.time[lang]}</h2>
-          <h3>80%</h3>
           <p>{t.cards.time_desc[lang]}</p>
         </div>
         <div className="card">
-          <button><BiDollarCircle /></button>
           <h2>{t.cards.revenue[lang]}</h2>
-          <h3>15%</h3>
           <p>{t.cards.revenue_desc[lang]}</p>
         </div>
         <div className="card">
-          <button><FiUsers /></button>
           <h2>{t.cards.staff[lang]}</h2>
-          <h3>40%</h3>
           <p>{t.cards.staff_desc[lang]}</p>
         </div>
         <div className="card">
-          <button><IoIosStarOutline /></button>
           <h2>{t.cards.satisfaction[lang]}</h2>
-          <h3>30%</h3>
           <p>{t.cards.satisfaction_desc[lang]}</p>
+        </div>
+        <div className="card">
+          <h2>{t.cards.add[lang]}</h2>
+          <p>{t.cards.add_desc[lang]}</p>
         </div>
       </div>
 

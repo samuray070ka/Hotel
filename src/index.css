@@ -284,48 +284,32 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .card{
-  width: 24%;
+  width: 100%;
   min-height: 10vh;
   display: flex;
+  margin-bottom: 20px;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 20px 0;
+  padding: 20px;
+  /* flex-direction: column; */
   border-radius: 8px;
   box-shadow: -.1px .5px 2px .5px #2222224b;
 }
-.card button {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: none;
-  outline: none;
-  font-size: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #6e9cd7f2;
-  color: #fff;
-  margin-bottom: 10px;
-}
 .card h2{
   color: #004aad;
+  width: 50%;
   font-weight: 100;
   font-size: 25px;
-  margin-top: 10px;
-  margin-bottom: 5px;
 }
 .card h3{
-  margin-bottom: 10px;
   font-size: 30px;
   color: #004aad;
 }
 .card p{
   font-size: 14px;
   font-weight: 300;
-  text-align: center;
   color: #22222273;
 }
 .faq-container {
@@ -568,13 +552,6 @@
   .img_box{
     width: 95%;
   }
-  .cards{
-    flex-wrap: wrap;
-  }
-  .card{
-    width: 50%;
-    margin-bottom: 10px;
-  }
 }
 @media screen and (max-width:850px) {
   .footer h1{
@@ -700,12 +677,12 @@ body{
   transform: translateX(50px);
 }
 .df img{
-  width: 80%;
+  width: 50%;
   height: 100%;
   border-radius: 10px;
 }
 .sd img{
-  width: 95%;
+  width: 95%; 
   height: 75%;
 }
 @media screen and (max-width:1040px) {
@@ -793,7 +770,6 @@ body{
     font-size: 16px;
   }
   .box_right{
-    /* right: -10px; */
     width: 100%;
   }
 }
@@ -801,4 +777,37 @@ body{
   .footer{
     height: 120vh;
   }
+}
+@media screen and (max-width:1180px) {
+  .cards{
+    width: 95%;
+  }
+}
+@media screen and (max-width:1040px) {
+  .card h2{
+    font-size: 20px;
+  }
+  .card p{
+    width: 50%;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width:635px) {
+  .card h2{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .card p{
+    width: 100%;
+  }
+}
+.img{
+  margin: auto;
+  display: block;
 }
