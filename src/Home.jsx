@@ -225,18 +225,38 @@ const Home = () => {
         />
       </div>
 
-      <div className="problem-list">
-        {problems.map((item, i) => (
-          <div className="problem-item" key={i}>
-            <div className='problem-content'>
-              <img src={item.icon} alt='icon' className='problem-icon' />
-              <h3>{lang === 'ar' ? item.title.ar : item.title.en}</h3>
-              <p>{lang === 'ar' ? item.desc.ar : item.desc.en}</p>
-            </div>
-            <span className='problem-number'>{i + 1}</span>
+        <div className="problem-list">
+  {problems.map((item, i) => (
+    <div className="problem-row" key={i}>
+      {i % 2 === 0 ? (
+        <>
+          <div className="problem-item left">
+            <img src={item.icon} alt='icon' className='problem-icon' />
+            <h3>{lang === 'ar' ? item.title.ar : item.title.en}</h3>
+            <p>{lang === 'ar' ? item.desc.ar : item.desc.en}</p>
           </div>
-        ))}
-      </div>
+          <div className="problem-line">
+            <span className="circle">{i + 1}</span>
+          </div>
+          <div className="empty"></div>
+        </>
+      ) : (
+        <>
+          <div className="empty"></div>
+          <div className="problem-line">
+            <span className="circle">{i + 1}</span>
+          </div>
+          <div className="problem-item rightt">
+            <img src={item.icon} alt='icon' className='problem-icon' />
+            <h3>{lang === 'ar' ? item.title.ar : item.title.en}</h3>
+            <p>{lang === 'ar' ? item.desc.ar : item.desc.en}</p>
+          </div>
+        </>
+      )}
+    </div>
+  ))}
+</div>
+
 
       <h1 className='text'>{t.bestChoice[lang]}</h1>
       <div className='img_box'>
