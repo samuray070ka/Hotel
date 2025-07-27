@@ -974,12 +974,17 @@ body{
     margin-bottom: 10px;
   }
 }
-@media screen and (max-width:400px) {
+@media screen and (max-width:550px) {
   .sd img{
   width: 100%;
-  transform: translateY(15px) translateX(-10px);
+  transform: translateY(30px);
 }
 .sd{
   width: 100%;
 }
+}
+@media screen and (max-width:430px) {
+  .sd img{
+    transform: translateY(25px);
+  }
 }
