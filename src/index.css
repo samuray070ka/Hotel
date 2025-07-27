@@ -974,10 +974,12 @@ body{
     margin-bottom: 10px;
   }
 }
-.sd img{
+@media screen and (max-width:400px) {
+  .sd img{
   width: 100%;
   transform: translateY(15px) translateX(-10px);
 }
 .sd{
   width: 100%;
+}
 }
