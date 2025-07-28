@@ -232,7 +232,7 @@ const Home = () => {
           <div className="problem-row" key={i}>
             {i % 2 === 0 ? (
               <>
-                <div className="problem-item left">
+                <div className="problem-item left ttt">
                   <img src={item.icon} alt='icon' className='problem-icon' />
                   <h3>{lang === 'ar' ? item.title.ar : item.title.en}</h3>
                   <p>{lang === 'ar' ? item.desc.ar : item.desc.en}</p>
@@ -248,7 +248,7 @@ const Home = () => {
                 <div className="problem-line">
                   <span className="circle">{i + 1}</span>
                 </div>
-                <div className="problem-item rightt">
+                <div className="problem-item rightt tt">
                   <img src={item.icon} alt='icon' className='problem-icon' />
                   <h3>{lang === 'ar' ? item.title.ar : item.title.en}</h3>
                   <p>{lang === 'ar' ? item.desc.ar : item.desc.en}</p>
