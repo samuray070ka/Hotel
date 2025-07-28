@@ -869,6 +869,8 @@ body{
   display: flex;
   flex-direction: column;
   position: relative;
+  transform: translatey(30px);
+  margin-bottom: 100px;
 }
 
 .problem-row {
@@ -881,7 +883,7 @@ body{
 .problem-item {
   background-color: transparent;
   border-radius: 10px;
-  height: 200px;
+  height: 150px;
   padding: 30px;
   text-align: center;
   position: relative;
@@ -916,6 +918,7 @@ body{
 
 .problem-line {
   width: 2px;
+  transform: translatey(50px);
   height: 100%;
   background-color: #ccc;
   position: relative;
