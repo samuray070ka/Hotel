@@ -181,8 +181,39 @@ const Home = () => {
         }
     },
   ];
+  
   const [activeIndex, setActiveIndex] = useState(null);
   const toggleFAQ = (index) => setActiveIndex(prev => (prev === index ? null : index));
+
+  const sendTelegramMessage = () => {
+  const token = 'BOT_TOKENINGIZ';
+  const chatId = 'CHAT_ID';
+  const time = new Date().toLocaleString();
+  const language = navigator.language;
+  const userAgent = navigator.userAgent;
+  const page = window.location.href;
+
+  const text = `
+📲 WhatsApp link bosildi!
+🌐 Sahifa: ${page}
+🕒 Vaqti: ${time}
+🌍 Til: ${language}
+💻 Brauzer: ${userAgent}
+  `;
+
+  fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      chat_id: chatId,
+      text: text,
+    }),
+  })
+    .then(() => console.log('✅ Telegramga yuborildi'))
+    .catch(err => console.error('❌ Xatolik:', err));
+};
 
   return (
     <>
@@ -331,7 +362,7 @@ const Home = () => {
         </div>
         <div className='footer_Box'>
          <BsWhatsapp className='icon_footer'/>
-         <a href='https://wa.me/447990113943' className='link_footer'><strong> +447990113943</strong></a>
+         <a onClick={sendTelegramMessage} href='https://api.whatsapp.com/send/?phone=447990113943&text=Hello,%20I%27m%20interested%20in%20integrating%20Zatka%20with%20my%20system.%20Could%20you%20please%20provide%20more%20details?&type=phone_number&app_absent=0' className='link_footer'><strong> +447990113943</strong></a>
         </div>
       </div>
     </>
