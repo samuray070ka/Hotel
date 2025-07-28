@@ -195,7 +195,6 @@ const Home = () => {
               <h1>{t.title[lang]}</h1>
               <p>{t.subtitle[lang]}</p>
               <a href="https://calendly.com/kpicom/kpi-com-demo">
-                <button className='btn'>{t.tryBtn[lang]} <IoIosArrowForward className='left_icon'/></button>
               </a>
             </div>
             <div className='right'>
@@ -327,7 +326,10 @@ const Home = () => {
             <button className='boc two'>{t.schedule[lang]} <IoIosArrowForward className='icon icon_btn'/></button>
           </a>
         </div>
-        <h6><BsTelephone className='phone' /> {t.orCall[lang]} <strong>+996 XXX XX XX</strong></h6>
+        <div className='footer_Box'>
+         <BsTelephone className='icon_footer'/>
+         <a href='https://wa.me/447990113943' className='link_footer'><strong> +447990113943</strong></a>
+        </div>
       </div>
     </>
   );

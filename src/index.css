@@ -878,7 +878,7 @@ body{
 .problem-item {
   background-color: transparent;
   border-radius: 10px;
-  height: 350px;
+  height: 200px;
   padding: 30px;
   text-align: center;
   position: relative;
@@ -1014,4 +1014,23 @@ body{
  .faq-question{
   padding: 40px 10px;
  } 
+}
+.link_footer{
+  margin-top: 20px;
+  color: #fff;
+  /* text-decoration: none; */
+  transition: .1s;
+}
+.link_footer:hover{
+  color: #0a74ff;
+  text-decoration: underline;
+}
+.footer_box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon_footer{
+  color: #fff;
+  transform: translateY(2px) translateX(-1px) rotate(12deg);
 }
