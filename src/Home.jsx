@@ -362,7 +362,7 @@ const Home = () => {
         </div>
         <div className='footer_Box'>
          <BsWhatsapp className='icon_footer'/>
-         <a onClick={sendTelegramMessage} href='https://api.whatsapp.com/send/?phone=447990113943&text=Hello,%20I%27m%20interested%20in%20integrating%20Zatka%20with%20my%20system.%20Could%20you%20please%20provide%20more%20details?&type=phone_number&app_absent=0' className='link_footer'><strong> +447990113943</strong></a>
+         <a onClick={sendTelegramMessage} href='https://wa.me/447990113943?text=Hello,%20I%27m%20interested%20in%20integrating%20Zatka%20with%20my%20system.%20Could%20you%20please%20provide%20more%20details?&type=phone_number&app_absent=0' className='link_footer'><strong> +447990113943</strong></a>
         </div>
       </div>
     </>
