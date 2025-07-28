@@ -163,7 +163,7 @@ const Home = () => {
     {
         question: {
         en: 'What’s the difference between a tax invoice and a simplified tax invoice?',
-        ar: '?ما الفرق بين الفاتورة الضريبية والفاتورة الضريبية المبسطة'
+        ar: 'ما الفرق بين الفاتورة الضريبية والفاتورة الضريبية المبسطة؟'
         },
         answer: {
         en: " A tax invoice is typically issued for business-to-business (B2B) transactions and includes details like the buyer's VAT number. A simplified tax invoice is used for business-to-consumer (B2C) transactions and contains less detailed information.",
@@ -173,7 +173,7 @@ const Home = () => {
     {
         question: {
         en: 'Should every invoice have a QR code?',
-        ar: 'هل يجب أن تحتوي كل فاتورة على رمز QR؟'
+        ar: 'هل يجب أن تحتوي كل فاتورة على رمز؟ QR'
         },
         answer: {
         en: ' Yes, according to ZATCA regulations, all e-invoices must include a QR code. KPI.com automatically generates the required QR codes for both standard and simplified invoices to ensure compliance.',
