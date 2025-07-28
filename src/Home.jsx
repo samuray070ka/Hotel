@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './index.css';
 import { IoIosArrowForward } from "react-icons/io";
-import { BsTelephone } from "react-icons/bs";
+import { BsWhatsapp } from "react-icons/bs";
 import { useLang } from './LanguageContext.jsx';
 import LanguageDropdown from './LanguageDropdown.jsx';
 import img1 from './img1.png'
@@ -327,7 +327,7 @@ const Home = () => {
           </a>
         </div>
         <div className='footer_Box'>
-         <BsTelephone className='icon_footer'/>
+         <BsWhatsapp className='icon_footer'/>
          <a href='https://wa.me/447990113943' className='link_footer'><strong> +447990113943</strong></a>
         </div>
       </div>
