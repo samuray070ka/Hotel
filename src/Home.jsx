@@ -73,7 +73,7 @@ const Home = () => {
         offer: { en: " Limited Time Offer", ar: " عرض لفترة محدودة" },
         streamline: { en: "Is your business ready for ZATCA Phase 2 compliance?", ar: "هل عملك جاهز للامتثال للمرحلة الثانية من ZATCA؟" },
         join: {
-        en: "Join companies across Saudi Arabia who are already saving time and staying compliant with KPI.com.",
+        en: "Join companies across Saudi Arabia who are already saving time and staying compliant with KPI.com",
         ar: "انضم إلى الشركات التي بدأت التوفير وضمان الامتثال مع KPI.com"
         },
         tryNow: { en: "Try for Free", ar: "احجز عرضًا توضيحيًا" },
@@ -156,8 +156,8 @@ const Home = () => {
         ar: 'ما هي فاتورة؟'
         },
         answer: {
-        en: 'Fatoora is Saudi Arabia’s national e-invoicing platform introduced by ZATCA (Zakat, Tax and Customs Authority). All businesses are required to generate and send e-invoices digitally through this system. With Phase 2 now active, invoices must be submitted in real time to the Fatoora platform via approved electronic systems like KPI.com.',
-        ar: 'فاتورة" هي منصة الفوترة الإلكترونية الوطنية في المملكة العربية السعودية والتي أطلقتها هيئة الزكاة والضريبة والجمارك (ZATCA). يجب على جميع الشركات إصدار الفواتير إلكترونيًا وإرسالها من خلال هذه المنصة. في المرحلة الثانية، أصبح من الإلزامي إرسال الفواتير مباشرة إلى نظام "فاتورة" باستخدام أنظمة إلكترونية معتمدة مثل KPI.com.'
+        en: 'Fatoora is Saudi Arabia’s national e-invoicing platform introduced by ZATCA (Zakat, Tax and Customs Authority). All businesses are required to generate and send e-invoices digitally through this system. With Phase 2 now active, invoices must be submitted in real time to the Fatoora platform via approved electronic systems like KPI.com',
+        ar: 'فاتورة" هي منصة الفوترة الإلكترونية الوطنية في المملكة العربية السعودية والتي أطلقتها هيئة الزكاة والضريبة والجمارك (ZATCA). يجب على جميع الشركات إصدار الفواتير إلكترونيًا وإرسالها من خلال هذه المنصة. في المرحلة الثانية، أصبح من الإلزامي إرسال الفواتير مباشرة إلى نظام "فاتورة" باستخدام أنظمة إلكترونية معتمدة مثل KPI.com'
         }
     },
     {
@@ -186,29 +186,34 @@ const Home = () => {
 
   return (
     <>
-      <div className='home'>
-        <div className="dark">
-          <LanguageDropdown />
-          <div className='box'>
-            <div className='left'>
-              {/* <button className='button'>{t.homeCrm[lang]} <IoIosArrowForward className='left_icon'/> {t.crm[lang]} <IoIosArrowForward className='left_icon'/> {t.hotel[lang]}</button> */}
-              <h1>{t.title[lang]}</h1>
-              <p>{t.subtitle[lang]}</p>
-            </div>
-            <div className='right'>
-                <div>
-                <label>{t.formTitle[lang]}</label>
-                <input type="text" placeholder='Your name' />
-                <input type="text" placeholder='+998 ' />
-                <a className='input_btn' href="https://calendly.com/kpicom/kpi-com-demo">
-                    <button className='input_btn'><a href="https://calendly.com/kpicom/kpi-com-demo" className='link'>{t.demoBtn[lang]}</a></button>
-                </a>
-                <p>{t.agree[lang]} <strong>{t.personal[lang]}</strong></p>
-                </div>
+        <div className="home">
+      <div className="dark">
+        <LanguageDropdown />
+        <div className="box">
+          <div className="left">
+            <h1>{t.title[lang]}</h1>
+            <p>{t.subtitle[lang]}</p>
+          </div>
+          <div className="right">
+            <div>
+              <label>{t.formTitle[lang]}</label>
+              <input type="text" placeholder="Your name" />
+              <input type="text" placeholder="+998 " />
+              <a className="input_btn" href="https://calendly.com/kpicom/kpi-com-demo">
+                <button className="input_btn">
+                  <a href="https://calendly.com/kpicom/kpi-com-demo" className="link">
+                    {t.demoBtn[lang]}
+                  </a>
+                </button>
+              </a>
+              <p>
+                {t.agree[lang]} <strong>{t.personal[lang]}</strong>
+              </p>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
       <div className="video_box">
         <h1 className='text'>{t.commonProblems[lang]}</h1>
